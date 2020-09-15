@@ -1,5 +1,5 @@
 CC=gcc
-CFLAGS=-I. -O2 -Wall
+CFLAGS=-I. -O2 -Wall -lpthread
 DEPS = barrier.h common_threads.h rand.h util.h
 OBJ = main.o barrier.o rand.o util.o
 
