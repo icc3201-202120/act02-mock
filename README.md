@@ -1,5 +1,7 @@
 # Sincronización de Threads
 
+**Nombre:**
+
 ## Primera parte: Completar una barrera
 
 Una N-barrera es una primitiva de sincronización que permite esperar
