@@ -3,7 +3,11 @@
 ## Primera parte: Completar una barrera
 
 Una N-barrera es una primitiva de sincronización que permite esperar
-la llegada de N procesos hasta un cierto punto en un camino ejecución.
+hasta que N threads progresen en un programa hasta un cierto punto,
+vale decir, hasta en donde se encuentra la barrera. Una vez que todos
+los threads llegan a la barrera, pueden continuar ejecutando en forma
+concurrente.
+
 La N-barrera expone a los threads una operación llamada `waitinbarrier`,
 y contiene un contador inicializado en cero, que aumenta cada vez que
 un thread invoca dicha operación. Si el valor del contador es menor
@@ -60,7 +64,7 @@ Para continuar con la segunda parte, debes descomentar la línea
 de código que dice `part2(args);` al final de la función `part1` de `main.c`.
 
 En la función `part2` cada uno de los tres threads que ejecutaron en `part1`
-tendrá una función diferente. El thread 1 (se revisa el número de thread con
+tiene un rol diferente. El thread 1 (se revisa el número de thread con
 `args->num`), inicializa un arreglo con valores aleatorios. El thread 2
 busca el menor valor en el arreglo, y el thread 3 el mayor valor. Debes
 sincronizar los threads, de manera que el thread 1 termine de inicializar
