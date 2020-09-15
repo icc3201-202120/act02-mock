@@ -36,8 +36,8 @@ void wait_in_barrier(barrier_t* barrier) {
   // must resume execution past the barrier.
 
   // 4. The barrier should be reusable. That is,
-  // barrier->count must be reset once all the 
-  // threads in the barrier have been awaken. 
+  // barrier->count must be reset once all the threads 
+  // in the barrier have been awaken. 
   // Use barrier->awaken to count the awaken
   // threads before resetting barrier->count.
 }
